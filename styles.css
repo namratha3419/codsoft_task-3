@@ -1,0 +1,81 @@
+.calculator {
+    background-color: darkred;
+    padding: 30px;
+    border-radius: 15px;
+    border: black 2px solid;
+    max-width: 400px; /* Set a max-width for better control */
+    margin: 0 auto; /* Center the calculator on the page */
+}
+
+.display-box {
+    border: 2px solid black;
+    padding: 15px;
+    font-size: 1.5rem; /* Adjust font size for better readability */
+    text-align: right; /* Align text to the right for a calculator display style */
+}
+
+#btn {
+    border-radius: 5px;
+    color: white;
+    background-color: orangered;
+    padding: 10px;
+    font-size: 1.2rem; /* Adjust font size for button */
+}
+
+input[type="button"] {
+    background-color: brown;
+    padding: 15px;
+    margin: 5px; /* Added margin for spacing between buttons */
+    width: 100%;
+    color: white;
+    font-size: 1.2rem; /* Adjust font size for button */
+    border: none; /* Remove border for cleaner look */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for button colors */
+}
+
+input:active[type="button"] {
+    background-color: red;
+}
+
+#operator {
+    background-color: orange;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .calculator {
+        padding: 20px;
+        max-width: 100%; /* Allow calculator to use full width */
+        margin: 0 10px; /* Slight margin for spacing */
+    }
+    .display-box {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    input[type="button"] {
+        padding: 12px; /* Reduce padding for smaller buttons */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 15px;
+        max-width: 100%;
+        margin: 0 5px;
+    }
+    .display-box {
+        font-size: 1rem; /* Further adjust font size for mobile devices */
+        padding: 8px;
+    }
+    input[type="button"] {
+        padding: 10px;
+        font-size: 0.9rem; /* Smaller font size for smaller buttons */
+        margin: 3px; /* Smaller margin for tight spacing */
+    }
+    #btn {
+        font-size: 1rem; /* Adjust special button font size */
+        padding: 8px; /* Adjust padding for better touch target size */
+    }
+}
